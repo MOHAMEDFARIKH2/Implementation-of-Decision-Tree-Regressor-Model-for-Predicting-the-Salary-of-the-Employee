@@ -57,7 +57,9 @@ mse=metrics.mean_squared_error(y_test,y_pred)mse
 r2=metrics.r2_score(y_test,y_pred)
 r2
 dt.predict([[5,6]])
-
+plt.figure(figsize=(20,8))
+plot_tree(dt,feature_names=x.columns,filled=True)
+plt.show()
 ```
 
 ## Output:
@@ -94,6 +96,10 @@ R2 value
 Prediction value
 
 ![image](https://github.com/MOHAMEDFARIKH2/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/168570140/6ca9b89b-5cc6-47f8-b12c-144d4bf340d2)
+
+Decision Tree
+
+![image](https://github.com/MOHAMEDFARIKH2/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/168570140/eef2b471-4215-4e80-869d-29a41ff4c052)
 
 
 ## Result:
